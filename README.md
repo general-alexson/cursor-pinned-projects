@@ -1,8 +1,14 @@
 # Pinned Projects
 
-A Cursor/VS Code extension that lets you **pin selected workspace projects to the top** of the File Explorer sidebar.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![VS Code 1.85+](https://img.shields.io/badge/VS%20Code-1.85%2B-blue?logo=visualstudiocode)](https://code.visualstudio.com/)
+[![Cursor](https://img.shields.io/badge/Cursor-Extension-green)](https://cursor.com/)
 
-Useful when you have a multi-root workspace and want your most-used projects to stay at the top of the list.
+Pin selected workspace projects to the top of the File Explorer sidebar. For Cursor and VS Code multi-root workspaces.
+
+Useful when you have several folders in one workspace and want your most-used projects to stay at the top of the list.
+
+**Topics:** `cursor` · `vscode-extension` · `file-explorer` · `workspace` · `multi-root`
 
 ## Requirements
 
