@@ -2,7 +2,7 @@
   "name": "cursor-pinned-projects",
   "displayName": "Pinned Projects",
   "description": "Pin selected workspace projects to the top of the File Explorer sidebar",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "publisher": "cursor-pinned-projects",
   "engines": {
     "vscode": "^1.85.0"

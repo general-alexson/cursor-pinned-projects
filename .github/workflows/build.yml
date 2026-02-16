@@ -1,11 +1,9 @@
 name: Build
 
+# Run only on version tag push (one run per release).
 on:
   push:
-    branches: [main]
     tags: ["v*"]
-  pull_request:
-    branches: [main]
 
 jobs:
   build:
