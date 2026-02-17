@@ -38,5 +38,17 @@ The [Build workflow](.github/workflows/build.yml) runs on version tag pushes (`v
 To release a new version:
 
 1. Bump `version` in `package.json`.
-2. Commit, push, then create and push a tag, e.g. `v0.1.11`.
-3. Download the `.vsix` from the workflow run’s **Artifacts**, or install from Open VSX after the publish job completes.
+2. Commit, push, then create and push the **patch** tag, e.g. `v0.1.16`.
+3. Update the **3-tag** version tags so they point to the new release:
+   - `vX.X.X` — specific release (e.g. `v0.1.16`) — created in step 2.
+   - `vX.X` — latest in minor line (e.g. `v0.1` → same commit as `v0.1.16`).
+   - `vX` — latest in major line (e.g. `v0` → same commit).
+   - `latest` — most recent stable (→ same commit).
+   ```bash
+   COMMIT=$(git rev-parse v0.1.16)
+   git tag -f -a v0.1 $COMMIT -m "v0.1 - latest 0.1.x"
+   git tag -f -a v0 $COMMIT -m "v0 - latest 0.x"
+   git tag -f -a latest $COMMIT -m "latest stable"
+   git push origin v0.1 v0 latest --force
+   ```
+4. Download the `.vsix` from the workflow run’s **Artifacts**, or install from Open VSX after the publish job completes.
