@@ -1,9 +1,9 @@
 name: Build
 
-# Run only on version tag push (one run per release).
+# Run only on full version tag push (vX.Y.Z), not convenience tags (v0.1, v0, latest).
 on:
   push:
-    tags: ["v*"]
+    tags: ["v*.*.*"]
 
 jobs:
   build:
