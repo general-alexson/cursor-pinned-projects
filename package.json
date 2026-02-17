@@ -2,7 +2,7 @@
   "name": "cursor-pinned-projects",
   "displayName": "Pinned Projects",
   "description": "Pin selected workspace projects to the top of the File Explorer sidebar",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "publisher": "cursor-pinned-projects",
   "repository": {
     "type": "git",
