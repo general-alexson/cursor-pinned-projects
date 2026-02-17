@@ -27,6 +27,9 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      - name: Generate icon
+        run: npm run generate-icon
+
       - name: Package VSIX
         run: npx @vscode/vsce package --no-dependencies
 
