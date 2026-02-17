@@ -11,8 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Release docs: update CHANGELOG before bumping version (step 1 in `doc/publishing.md`). Renumbered release steps; 3-tag update commands unchanged.
-- AI-MEMORY and COMPLETED-IMPLEMENTATIONS moved to workspace root (removed from this repo).
+- Release docs: update CHANGELOG before bumping version (step 1 in `doc/publishing.md`).
 
 ## [0.1.15] - 2026-02-16
 
