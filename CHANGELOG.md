@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.16] - 2026-02-16
+
+### Changed
+
+- Release docs: update CHANGELOG before bumping version (step 1 in `doc/publishing.md`). Renumbered release steps; 3-tag update commands unchanged.
+- AI-MEMORY and COMPLETED-IMPLEMENTATIONS moved to workspace root (removed from this repo).
+
+## [0.1.15] - 2026-02-16
+
+### Changed
+
+- Version bump.
+
 ## [0.1.14] - 2026-02-17
 
 ### Added
@@ -111,7 +124,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Command **Pinned Projects: Apply Pinned Order** to reapply order (e.g. after adding folders).
 - Activation on startup to apply saved order when opening a workspace.
 
-[Unreleased]: https://github.com/general-alexson/cursor-pinned-projects/compare/v0.1.14...HEAD
+[Unreleased]: https://github.com/general-alexson/cursor-pinned-projects/compare/v0.1.16...HEAD
+[0.1.16]: https://github.com/general-alexson/cursor-pinned-projects/compare/v0.1.15...v0.1.16
+[0.1.15]: https://github.com/general-alexson/cursor-pinned-projects/compare/v0.1.14...v0.1.15
 [0.1.14]: https://github.com/general-alexson/cursor-pinned-projects/compare/v0.1.13...v0.1.14
 [0.1.13]: https://github.com/general-alexson/cursor-pinned-projects/compare/v0.1.12...v0.1.13
 [0.1.12]: https://github.com/general-alexson/cursor-pinned-projects/compare/v0.1.11...v0.1.12
