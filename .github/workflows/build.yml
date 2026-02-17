@@ -51,6 +51,12 @@ jobs:
         with:
           name: cursor-pinned-projects-${{ github.ref_name }}
 
+      - name: Create Open VSX namespace
+        env:
+          OPEN_VSX_TOKEN: ${{ secrets.OPEN_VSX_TOKEN }}
+        run: npx ovsx create-namespace cursor-pinned-projects --pat "$OPEN_VSX_TOKEN"
+        continue-on-error: true
+
       - name: Publish to Open VSX
         env:
           OPEN_VSX_TOKEN: ${{ secrets.OPEN_VSX_TOKEN }}
