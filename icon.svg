@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="pin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5a9fd4"/>
+      <stop offset="100%" style="stop-color:#2d6cb5"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="#1e1e1e"/>
+  <!-- Map-pin / location-pin (teardrop): unmistakably "pin", not search -->
+  <path d="M64 24 C40 24 28 44 28 60 C28 80 64 100 64 100 C64 100 100 80 100 60 C100 44 88 24 64 24 Z" fill="url(#pin)"/>
+  <path d="M64 28 C43 28 32 46 32 60 C32 78 64 96 64 96 C64 96 96 78 96 60 C96 46 85 28 64 28 Z" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+  <!-- Small folder hint -->
+  <rect x="26" y="72" width="18" height="12" rx="2" fill="rgba(255,255,255,0.12)"/>
+  <rect x="30" y="68" width="18" height="12" rx="2" fill="rgba(255,255,255,0.18)"/>
+</svg>

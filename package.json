@@ -2,7 +2,7 @@
   "name": "cursor-pinned-projects",
   "displayName": "Pinned Projects",
   "description": "Pin selected workspace projects to the top of the File Explorer sidebar",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "publisher": "cursor-pinned-projects",
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
     "onStartupFinished"
   ],
   "main": "./out/extension.js",
+  "icon": "images/icon.png",
   "contributes": {
     "commands": [
       {
@@ -53,7 +54,8 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "lint": "eslint src --ext ts"
+    "lint": "eslint src --ext ts",
+    "generate-icon": "node scripts/generate-icon.js"
   },
   "devDependencies": {
     "@types/vscode": "^1.85.0",
@@ -61,6 +63,7 @@
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",
     "typescript": "^5.3.0",
-    "eslint": "^8.56.0"
+    "eslint": "^8.56.0",
+    "pngjs": "^7.0.0"
   }
 }
